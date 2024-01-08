@@ -1,4 +1,4 @@
-package sabrinazappe.frauas.backend;
+package com.gruppe8.frauas.backend;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

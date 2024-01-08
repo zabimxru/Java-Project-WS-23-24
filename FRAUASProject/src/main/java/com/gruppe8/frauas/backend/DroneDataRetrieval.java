@@ -1,11 +1,9 @@
-package sabrinazappe.frauas.backend;
-import java.awt.Container;
+package com.gruppe8.frauas.backend;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
-import javax.swing.JButton;
-import java.io.PrintStream; //Basis:https://stackoverflow.com/questions/5107629/how-to-redirectconsole-content-to-a-textarea-in-java
-
 public class DroneDataRetrieval {
 
 	// program entrypoint
