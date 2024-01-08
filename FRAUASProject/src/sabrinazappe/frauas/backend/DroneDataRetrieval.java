@@ -1,5 +1,4 @@
 package sabrinazappe.frauas.backend;
-
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,13 +6,14 @@ import javax.swing.*;
 import javax.swing.JButton;
 import java.io.PrintStream; //Basis:https://stackoverflow.com/questions/5107629/how-to-redirectconsole-content-to-a-textarea-in-java
 
-public class DroneDataProcess {
-//program entrypoint
+public class DroneDataRetrieval {
+
+	// program entrypoint
 	private static JTextArea textArea;
 
 	public static void main(String[] args) {
 		try { // try-catch -> handle any exceptions that might come up
-//I define the API endpoint for fetching the drone data
+			// I define the API endpoint for fetching the drone data
 			String droneendpoint = "drones";
 			String dynamicsendpoint = "dronedynamics";
 			String typesendpoint = "dronetypes";
@@ -53,7 +53,7 @@ public class DroneDataProcess {
 				}
 			});
 		} catch (Exception e) {
-//If their is an exception during run, print the trace for debugging
+			// If their is an exception during run, print the trace for debugging
 			e.printStackTrace();
 		}
 	}
