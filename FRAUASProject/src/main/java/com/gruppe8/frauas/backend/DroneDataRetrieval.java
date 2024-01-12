@@ -10,48 +10,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class DroneDataRetrieval {
 
-
-	/*
-
-
-	{
-    "count": 25,
-    "next": "http://dronesim.facets-labs.com/api/drones/?limit=10&offset=10",
-    "previous": null,
-    "results": [
-        {
-            "id": 71,
-            "dronetype": "http://dronesim.facets-labs.com/api/dronetypes/85/",
-            "created": "2023-12-27T09:07:00.678852+01:00",
-            "serialnumber": "HoHS-2024-F26CA5",
-            "carriage_weight": 387,
-            "carriage_type": "SEN"
-        },
-
-        ....
-	}
-
-
-	 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// program entrypoint
 	private static JTextArea textArea;
 
