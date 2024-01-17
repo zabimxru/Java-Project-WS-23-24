@@ -1,4 +1,4 @@
-package studyopedia;
+package com.gruppe8.frauas.backend.data.studyopedia;
 //Import of necessary Java classes for handling input/output and networking 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
