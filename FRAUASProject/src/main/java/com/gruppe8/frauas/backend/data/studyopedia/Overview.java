@@ -1,3 +1,4 @@
+package com.gruppe8.frauas.backend.data.studyopedia;
 import java.util.Date;
 import java.util.List;
 

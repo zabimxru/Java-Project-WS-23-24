@@ -1,14 +1,19 @@
+package com.gruppe8.frauas.backend.data.studyopedia;
 import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import com.gruppe8.frauas.backend.data.HelloRest;
+
 public class DroneFlightGUI extends JFrame {
-	private OverviewDrone drone; //Assuming we have a selected drone
+	private static final String USER_AGENT = "Mozilla Firefox Awesome version";
+    private static final String ENDPOINT_URL = "http://dronesim.facets-labs.com/api/dronedynamics/?format=json";
+    private static final String TOKEN = "Token 25d3818e0d0fb9288a1be8158fa58ecd4efc8ef9";
 	
-	public DroneFlightGUI(OverviewDrone drone) {
-		this.drone = drone;
-		initComponents();
+    public DroneFlightGUI() {
+        initComponents();
+        HelloRest.test;
 	}
 	
 	private void initComponents() {

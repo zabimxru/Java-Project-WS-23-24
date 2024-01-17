@@ -1,28 +1,25 @@
-import java.util.List;
+package com.gruppe8.frauas.backend.data.studyopedia;
 
 public class OverviewDroneType {
 	private int id;
 	private String manufacturer;
 	private String typeName;
-	private List<OverviewDrone> drones;
 	private int weight;
-	private int maximumSpeed;
+	private int maxSpeed;
 	private int batteryCapacity;
 	private int controlRange;
-	private int maximumCarriage;
+	private int maxCarriage;
 	
-	public OverviewDroneType(int id, String manufacturer, String typeName, List<OverviewDrone> drones, int weight,
-			int maximumSpeed, int batteryCapacity, int controlRange, int maximumCarriage) {
-		super();
+	public OverviewDroneType(int id, String manufacturer, String typeName, int weight,
+			int maxSpeed, int batteryCapacity, int controlRange, int maxCarriage) {
 		this.id = id;
 		this.manufacturer = manufacturer;
 		this.typeName = typeName;
-		this.drones = drones;
 		this.weight = weight;
-		this.maximumSpeed = maximumSpeed;
+		this.maxSpeed = maxSpeed;
 		this.batteryCapacity = batteryCapacity;
 		this.controlRange = controlRange;
-		this.maximumCarriage = maximumCarriage;
+		this.maxCarriage = maxCarriage;
 	}
 	
 	public int getId() {
@@ -43,12 +40,6 @@ public class OverviewDroneType {
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
 	}
-	public List<OverviewDrone> getDrones() {
-		return drones;
-	}
-	public void setDrones(List<OverviewDrone> drones) {
-		this.drones = drones;
-	}
 	public int getWeight() {
 		return weight;
 	}
@@ -56,10 +47,10 @@ public class OverviewDroneType {
 		this.weight = weight;
 	}
 	public int getMaximumSpeed() {
-		return maximumSpeed;
+		return maxSpeed;
 	}
 	public void setMaximumSpeed(int maximumSpeed) {
-		this.maximumSpeed = maximumSpeed;
+		this.maxSpeed = maximumSpeed;
 	}
 	public int getBatteryCapacity() {
 		return batteryCapacity;
@@ -74,10 +65,10 @@ public class OverviewDroneType {
 		this.controlRange = controlRange;
 	}
 	public int getMaximumCarriage() {
-		return maximumCarriage;
+		return maxCarriage;
 	}
 	public void setMaximumCarriage(int maximumCarriage) {
-		this.maximumCarriage = maximumCarriage;
+		this.maxCarriage = maximumCarriage;
 	}
 
 }

@@ -1,3 +1,5 @@
+package com.gruppe8.frauas.backend.data;
+
 import java.awt.BorderLayout; //Import of the classes for establishing a connection
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -5,6 +7,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JFrame; //Import of the necessary GUI-libraries
 import javax.swing.JScrollPane;
@@ -15,7 +20,7 @@ import org.json.JSONArray; //Import of the necessary JSON-libraries
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-public class HelloRest extends JFrame {
+public class HelloRest extends JFrame{
     private static final String USER_AGENT = "Mozilla Firefox Awesome version";
     private static final String ENDPOINT_URL = "http://dronesim.facets-labs.com/api/dronetypes/?format=json";
     private static final String TOKEN = "Token 25d3818e0d0fb9288a1be8158fa58ecd4efc8ef9";
@@ -80,7 +85,7 @@ public class HelloRest extends JFrame {
             System.out.println("General IO Exception: " + e.getLocalizedMessage());
             e.printStackTrace();
         }
-    }
+        }
     }
     
     
@@ -88,9 +93,12 @@ public class HelloRest extends JFrame {
         // Add data to the tableModel by using JSON interfaces
         JSONObject wholeFile = new JSONObject(input); //Anstatt so eine Klasse erstellen mit Drohnen und ein Array fängt die Informationen ab und speichert sie in der Klasse ein
         JSONArray jsonFile = wholeFile.getJSONArray("results");
+        
+        
         for (int i = 0; i < jsonFile.length(); i++) {
             JSONObject o = jsonFile.getJSONObject(i);
             if (o.has("id") && o.has("manufacturer")) {
+            	//Extract data from JSON and create a DroneTypes instance 
                 int id = o.getInt("id");
                 String manufacturer = o.getString("manufacturer");
                 String typename = o.getString("typename");
@@ -114,4 +122,5 @@ public class HelloRest extends JFrame {
             helloRest.setVisible(true);
         
     }
+    
 }

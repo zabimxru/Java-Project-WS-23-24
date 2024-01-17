@@ -1,4 +1,7 @@
+package com.gruppe8.frauas.backend.data.studyopedia;
 import java.util.Date;
+
+
 
 public class OverviewDroneDynamics {
 	private int id;

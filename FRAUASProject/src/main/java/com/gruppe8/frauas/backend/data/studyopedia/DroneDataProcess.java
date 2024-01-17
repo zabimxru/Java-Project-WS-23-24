@@ -1,4 +1,4 @@
-package studyopedia;
+package com.gruppe8.frauas.backend.data.studyopedia;
 //Necessary Java classes for GUI, event handling and IO
 import java.awt.Container;
 import java.awt.event.ActionEvent;
