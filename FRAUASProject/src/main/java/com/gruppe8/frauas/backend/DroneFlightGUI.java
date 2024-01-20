@@ -1,10 +1,11 @@
-package com.gruppe8.frauas.backend.data.studyopedia;
+package com.gruppe8.frauas.backend;
 import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import com.gruppe8.frauas.backend.data.HelloRest;
+import com.gruppe8.frauas.backend.data.OverviewDrone;
+import com.gruppe8.frauas.backend.data.OverviewDroneDynamics;
 
 public class DroneFlightGUI extends JFrame {
 	private static final String USER_AGENT = "Mozilla Firefox Awesome version";

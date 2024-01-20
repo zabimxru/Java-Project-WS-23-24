@@ -1,4 +1,4 @@
-package com.gruppe8.frauas.backend.data.studyopedia;
+package com.gruppe8.frauas.backend.data;
 
 public class OverviewDroneType {
 	private int id;

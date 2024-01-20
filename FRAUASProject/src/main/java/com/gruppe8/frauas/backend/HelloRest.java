@@ -1,4 +1,4 @@
-package com.gruppe8.frauas.backend.data;
+package com.gruppe8.frauas.backend;
 
 import java.awt.BorderLayout; //Import of the classes for establishing a connection
 import java.io.BufferedReader;
@@ -24,6 +24,7 @@ public class HelloRest extends JFrame{
     private static final String USER_AGENT = "Mozilla Firefox Awesome version";
     private static final String ENDPOINT_URL = "http://dronesim.facets-labs.com/api/dronetypes/?format=json";
     private static final String TOKEN = "Token 25d3818e0d0fb9288a1be8158fa58ecd4efc8ef9";
+	public static final String test = null;
 
     private DefaultTableModel tableModel;
 

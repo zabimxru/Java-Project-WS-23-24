@@ -1,4 +1,4 @@
-package com.gruppe8.frauas.backend.data.studyopedia;
+package com.gruppe8.frauas.backend;
 
 import java.awt.BorderLayout; //Import of the classes for establishing a connection
 import java.io.BufferedReader;
@@ -20,6 +20,8 @@ import javax.swing.table.DefaultTableModel;
 import org.json.JSONArray; //Import of the necessary JSON-libraries
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import com.gruppe8.frauas.backend.data.OverviewDrone;
 
 public class FlightChart extends JFrame{
     private static final String USER_AGENT = "Mozilla Firefox Awesome version";

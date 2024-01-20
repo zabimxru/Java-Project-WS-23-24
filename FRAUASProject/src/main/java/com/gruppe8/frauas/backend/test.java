@@ -1,4 +1,4 @@
-package com.gruppe8.frauas.backend.data;
+package com.gruppe8.frauas.backend;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,11 +6,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-
-import com.gruppe8.frauas.backend.data.studyopedia.DroneApp;
-import com.gruppe8.frauas.backend.data.studyopedia.DroneStatus;
-import com.gruppe8.frauas.backend.data.studyopedia.FlightDynamics;
-
 import javax.swing.JButton;
 
 public class test {
